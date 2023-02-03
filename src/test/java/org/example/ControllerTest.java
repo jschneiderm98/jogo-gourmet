@@ -6,10 +6,8 @@ import org.example.model.AnswerNode;
 import org.example.model.NodeType;
 import org.example.model.QuestionNode;
 import org.example.view.JOptionPaneView;
-import org.example.view.ViewStrategy;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 public class ControllerTest {

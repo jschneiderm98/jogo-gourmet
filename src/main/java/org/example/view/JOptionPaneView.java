@@ -44,10 +44,7 @@ public class JOptionPaneView implements  ViewStrategy{
             this.exit();
             return this.doesFoodHasAttribute(attribute);
         }
-        else if (res == JOptionPane.YES_OPTION) {
-            return true;
-        }
-        return false;
+        else return res == JOptionPane.YES_OPTION;
     }
 
     @Override
@@ -61,10 +58,7 @@ public class JOptionPaneView implements  ViewStrategy{
             this.exit();
             return this.isCorrectFood(food);
         }
-        else if (res == JOptionPane.YES_OPTION) {
-            return true;
-        }
-        return false;
+        else return res == JOptionPane.YES_OPTION;
     }
 
     @Override
@@ -101,7 +95,7 @@ public class JOptionPaneView implements  ViewStrategy{
                 "Deseja sair do programa?",
                 "Adivinhar comida", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE
         );
-        if (res == JOptionPane.NO_OPTION) {
+        if (res != JOptionPane.YES_OPTION) {
             return;
         }
         System.exit(0);
